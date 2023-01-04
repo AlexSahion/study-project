@@ -1,0 +1,95 @@
+.header {
+    padding: 20px;
+    &__menu{
+        display: flex;
+    }
+    &__logo {
+        margin-right: 625px;
+    }
+
+    &__items {
+        margin-right: 200px;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        margin-right: 38px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__link a {
+        color: #fff;
+    }
+    &__link a:hover{
+        color: #FBD784;
+        transition: 0.3s;
+    }
+    &__link:last-child() {
+        margin-right: 0px;
+    }
+
+    &__account {
+        display: flex;
+    }
+
+    &__account-icon {
+        margin-right: 4px;
+    }
+
+    &__account-text {
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__account-text:hover{
+        color: #FBD784;
+        transition: 0.3s;
+    }
+
+    &__content {
+        margin-top: 195px;
+        padding-left: 30px;
+    }
+    &__content div {
+        margin-bottom: 32px;
+    }
+    &__content div:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__text {
+        color: #FBD784;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: "Playfair Display";
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 88px;
+        line-height: 100px; 
+    }
+
+    &__navigation {
+        display: flex;
+    }
+    &__info{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__arrow{
+        margin-left: 16px;
+    }
+}
+
