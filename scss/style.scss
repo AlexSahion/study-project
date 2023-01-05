@@ -1,7 +1,4 @@
-@import "_fonts";
-@import "_header";
 
-//<ПЕРЕМЕННЫЕ>------------------------------------------------------------------------------
 
 body{
     font-family: "Gilroy";
@@ -15,3 +12,7 @@ body{
     max-width: 1760px;
     margin: 0 auto;
 }
+
+@import "_fonts";
+@import "_header";
+@import "_main";
