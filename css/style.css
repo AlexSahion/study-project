@@ -1,4 +1,109 @@
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  font-display: swap;
+  src: url("../fonts/CroncleDisplay-Bold.woff2") format("woff2"), url("../fonts/CroncleDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  font-display: swap;
+  src: url("../fonts/CroncleDisplay-Semibold.woff2") format("woff2"), url("../fonts/CroncleDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 body {
   font-family: "Gilroy";
   background-image: url("../img/BG.jpg");
@@ -11,6 +116,10 @@ body {
 .container {
   max-width: 1760px;
   margin: 0 auto;
+}
+
+.wrapper {
+  padding-bottom: 50px;
 }
 
 .header {
@@ -211,10 +320,22 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+@media (max-width: 1170px) {
+  .main__container {
+    max-width: 990px;
+  }
+}
+.main__items {
+  padding: 30px;
+}
 .main__item {
   display: flex;
   position: relative;
   margin-bottom: 100px;
+}
+.main__img {
+  width: 100%;
+  height: auto;
 }
 .main__body {
   padding: 60px;
@@ -238,7 +359,7 @@ body {
   opacity: 0.3;
   position: absolute;
   top: -20px;
-  right: 320px;
+  right: 260px;
 }
 .main__subtitle {
   font-weight: 800;
@@ -266,4 +387,106 @@ body {
 }
 .main__arrow {
   margin-left: 15px;
+}
+
+.footer__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.footer__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 150px;
+}
+.footer__copy-right {
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0.5;
+}
+.footer__items {
+  display: flex;
+}
+.footer__item {
+  margin-right: 212px;
+}
+.footer__item:last-child {
+  margin-right: 0px;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FBD784;
+  margin-bottom: 25px;
+}
+.footer__links {
+  font-size: 18px;
+  line-height: 32px;
+}
+.footer__link {
+  margin-bottom: 20px;
+}
+.footer__link:last-child {
+  margin-bottom: 0px;
+}
+.footer__link a {
+  color: #FFFFFF;
+}
+.footer__link a:hover {
+  color: #FBD784;
+  transition: 0.3s;
+}
+@media (max-width: 1150px) {
+  .footer__item {
+    margin-right: 140px;
+  }
+}
+@media (max-width: 990px) {
+  .footer__item {
+    margin-right: 70px;
+  }
+}
+@media (max-width: 850px) {
+  .footer__content {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .footer__info {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .footer__text {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 470px) {
+  .footer__item {
+    margin-right: 40px;
+  }
+  .footer__title {
+    font-size: 17px;
+  }
+  .footer__link {
+    margin-bottom: 14px;
+    font-size: 15px;
+  }
+  .footer__text {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .footer__copy-right {
+    font-size: 15px;
+  }
 }

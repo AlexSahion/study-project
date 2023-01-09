@@ -1,18 +1,13 @@
 
 
-body{
-    font-family: "Gilroy";
-    background-image: url("../img/BG.jpg");
-    background-color: #0b1d26;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    color: #fff;
-}
-.container{
-    max-width: 1760px;
-    margin: 0 auto;
-}
 
-@import "_fonts";
-@import "_header";
-@import "_main";
+@import "config/fonts";
+@import "config/vars";
+@import "config/reset";
+@import "config/base";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+
+

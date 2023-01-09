@@ -1,0 +1,123 @@
+.footer {
+    // .footer__container
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    // .footer__content
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    // .footer__info
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    // .footer__logo
+    &__logo {}
+    // .footer__text
+    &__text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px; 
+        margin-bottom: 150px; 
+    }
+    // .footer__copy-right
+    &__copy-right {
+        font-size: 18px;
+        line-height: 32px;
+        opacity: 0.5;
+    }
+    // .footer__body
+    &__body {}
+    // .footer__items
+    &__items {
+        display: flex;
+    }
+    // .footer__item
+    &__item {
+        margin-right: 212px;
+    }
+    &__item:last-child {
+        margin-right: 0px;
+    }
+    // .footer__title
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;  
+        color: #FBD784;
+        margin-bottom: 25px;
+    }
+    // .footer__links
+    &__links {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    // .footer__link
+    &__link {
+        margin-bottom: 20px;
+    }
+    &__link:last-child {
+        margin-bottom: 0px;
+    }
+    &__link a {
+        color: #FFFFFF;
+    }
+    &__link a:hover {
+        color: #FBD784;
+        transition: 0.3s;
+    }
+    @media(max-width:1150px){
+        &__item{
+            margin-right: 140px;
+        } 
+    }
+    @media(max-width:990px){
+        &__item{
+            margin-right: 70px;
+        }
+    }
+    @media(max-width:850px){
+        &__content{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+        &__info{
+            margin-top: 50px;
+            text-align: center;
+        }
+        &__text{
+            margin-bottom: 50px;
+        }
+    }
+    @media(max-width:470px){
+        &__item{
+            margin-right: 40px;
+        }
+        &__title{
+            font-size: 17px;
+        }
+        &__link{
+            margin-bottom: 14px;
+            font-size: 15px;
+        }
+        &__content{
+            
+        }
+        &__info{
+        }
+        &__text{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        &__copy-right{
+            font-size: 15px;
+        }
+    }
+}
+
