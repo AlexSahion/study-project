@@ -5,9 +5,13 @@ body{
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #fff;
+    .menu-open &{
+        overflow: hidden;
+    }
 }
-.container{
-    max-width: 1760px;
+[class*="__container"]{
+    max-width: $containerWidth + $mainOffset*2;
+    padding: 0 $mainOffset;
     margin: 0 auto;
 }
 .wrapper{
