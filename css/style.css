@@ -392,6 +392,11 @@ body {
   line-height: 177.7777777778%;
   opacity: 0.5;
 }
+@media (max-width: 444px) {
+  .footer__copy-right {
+    font-size: 13px;
+  }
+}
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
@@ -418,7 +423,19 @@ body {
     padding-bottom: 25px;
   }
 }
+@media (max-width: 444px) {
+  .footer__nav {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 
+@media (max-width: 444px) {
+  .footer-nav__column {
+    padding-bottom: 25px;
+  }
+}
 .footer-nav__title {
   font-weight: 700;
   font-size: 24px;
