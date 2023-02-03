@@ -30,6 +30,7 @@
         background-color: rgba(#000,90%);
 				transition: $defaultTrans;
 				opacity: 0;
+        z-index: 2;
 				.menu-open & {
 					top: 0;
 					opacity: 1;
@@ -53,11 +54,13 @@
   &__item {}
   // .header__link
   &__link {
-    font-weight: 700;
     color: #fff;
     transition: $defaultTrans;
     &:hover{
       color: $defaultColor;
+    }
+    &:active{
+      color: #2eb44f;
     }
     @media(max-width:632px){
       font-size: 25px;
