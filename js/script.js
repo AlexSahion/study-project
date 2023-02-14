@@ -1,4 +1,5 @@
 const { documentElement: html, body } = document
+const header = document.querySelector('.header')
 const burgerButton = document.querySelector(".icon-menu")
 const pageWrapper = document.querySelector(".wrapper")
 const lockPaddingElements = document.querySelectorAll(".lock-padding")
