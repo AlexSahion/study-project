@@ -5,6 +5,10 @@ const lockPaddingElements = document.querySelectorAll(".lock-padding")
 const headerSubMenu = document.querySelector(".header__submenu")
 const userAccountButton = document.querySelector('.header__account-btn')
 const menuLinks = document.querySelectorAll('[data-go-to]');
+
+
+const html = document.documentElement
+
 /*
 * Универсальная функция для блокировки скрола при открытии модальных окон
 * При открытии модального окна вызываем: toggleBodyLock(true)
@@ -38,3 +42,13 @@ const menuInit = () => {
 }
 
 menuInit()
+
+function headerFixed() {
+  const headerStickyObserver = new IntersectionObserver(([entry]) => {
+    header.classList.toggle('sticky', !entry.isIntersecting)
+  })
+
+  if (firstScreen) {
+    headerStickyObserver.observe(firstScreen)
+  }
+}
