@@ -280,6 +280,11 @@ body {
   }
 }
 
+.sticky {
+  background-color: #1A1A1A;
+  transition: all 300ms ease-in-out;
+}
+
 .page__promo {
   padding-top: 80px;
 }
