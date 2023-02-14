@@ -6,7 +6,7 @@ const headerSubMenu = document.querySelector(".header__submenu")
 const userAccountButton = document.querySelector('.header__account-btn')
 const menuLinks = document.querySelectorAll('[data-go-to]');
 
-
+const firstScreen = document.querySelector('[data-observ]')
 /*
 * Универсальная функция для блокировки скрола при открытии модальных окон
 * При открытии модального окна вызываем: toggleBodyLock(true)
