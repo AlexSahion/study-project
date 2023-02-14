@@ -1,4 +1,8 @@
 .header {
+  position: fixed;
+  z-index: 5;
+  background-color: transparent;
+  width: 100%;
   border-bottom: 2px solid rgb(255, 255, 255, 0.1);
   // .header__container
   &__container {

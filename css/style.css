@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: Helvetica;
+  position: relative;
   background-color: #1A1A1A;
   color: #fff;
 }
@@ -161,6 +162,10 @@ body {
 }
 
 .header {
+  position: fixed;
+  z-index: 5;
+  background-color: transparent;
+  width: 100%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .header__container {
