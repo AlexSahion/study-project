@@ -1,4 +1,5 @@
 .header {
+  transition: $defaultTrans;
   position: fixed;
   z-index: 5;
   background-color: transparent;
