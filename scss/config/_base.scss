@@ -1,7 +1,7 @@
 body{
     font-family: $fontFamily;
     background: url("../img/placeholder.png");
-    background-size: 100% auto;
+    background-position: center 0;
     background-repeat: no-repeat;
     background-color: #1A1A1A;
     color: #fff;
@@ -42,7 +42,7 @@ body{
         margin-bottom: 50px;
     }
     @media(max-width:424px){
-      font-size: 30px;
+        font-size: 30px;
     }
 }
 .titles{
