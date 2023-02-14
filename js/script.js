@@ -7,8 +7,6 @@ const userAccountButton = document.querySelector('.header__account-btn')
 const menuLinks = document.querySelectorAll('[data-go-to]');
 
 
-const html = document.documentElement
-
 /*
 * Универсальная функция для блокировки скрола при открытии модальных окон
 * При открытии модального окна вызываем: toggleBodyLock(true)
@@ -52,3 +50,4 @@ function headerFixed() {
     headerStickyObserver.observe(firstScreen)
   }
 }
+headerFixed()
