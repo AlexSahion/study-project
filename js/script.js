@@ -1,13 +1,12 @@
 const { documentElement: html, body } = document
 const header = document.querySelector('.header')
+const firstScreen = document.querySelector('[data-observ]')
 const burgerButton = document.querySelector(".icon-menu")
 const pageWrapper = document.querySelector(".wrapper")
 const lockPaddingElements = document.querySelectorAll(".lock-padding")
 const headerSubMenu = document.querySelector(".header__submenu")
 const userAccountButton = document.querySelector('.header__account-btn')
 const menuLinks = document.querySelectorAll('[data-go-to]');
-
-const firstScreen = document.querySelector('[data-observ]')
 /*
 * Универсальная функция для блокировки скрола при открытии модальных окон
 * При открытии модального окна вызываем: toggleBodyLock(true)
